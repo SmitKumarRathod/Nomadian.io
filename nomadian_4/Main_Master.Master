@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main_Master.master.cs" Inherits="nomadian_4.Main_Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Nomadian.io</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/all.css" rel="stylesheet" />  
+        <link href="css/new-age.css" rel="stylesheet" />
+
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+  
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+         <script src="js/new-age.min.js"></script>  
+        
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+          <!--   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+         <img width="50" src="images/tentLogo_1.png" />
+    <div class="container">
+        <div class="fixed-top">
+        <!--  <a class="navbar-brand js-scroll-trigger" href="#page-top">Nomadian.io</a>-->
+         <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#download">About</a>
+              </li>-->
+              <!--<li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#features">Help</a>
+              </li>-->
+            <!--  <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </nav>
+            -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer>
+                <div class="container">
+                  <p class="text-white">&copy; Nomadian.io 2020. All Rights Reserved.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#">Privacy</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Terms</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+            </footer>
+
+        </div>
+    </form>
+    <script>
+      window.watsonAssistantChatOptions = {
+          integrationID: "65260f74-aaa5-471a-8139-50527e50fba9", // The ID of this integration.
+          region: "eu-gb", // The region your integration is hosted in.
+          serviceInstanceID: "ae1bbfd5-5948-4a41-857c-e82f2032fa97", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>

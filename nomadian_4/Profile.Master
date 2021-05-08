@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Profile.master.cs" Inherits="nomadian_4.Profile" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Nomadian.io</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/all.css" rel="stylesheet" />  
+        <link href="css/StyleSheet1.css" rel="stylesheet" />
+
+
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/new-age.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+          
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+              <a class="navbar-brand" href="HomePage.aspx">
+                 
+                  <img src="images/nomadSym3.png" width="50" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="align-self-end">
+                <ul class="navbar-nav mr-auto text-light " >
+                  <li class="nav-item">
+                   
+                      <asp:LinkButton ID="linkHome" CssClass="nav-link text-dark" runat="server" OnClick="linkHome_Click" >Home</asp:LinkButton>
+                  </li>
+                  <li class="nav-item">
+                    
+                      <asp:LinkButton ID="linkProfile" CssClass="nav-link text-dark" runat="server" OnClick="linkProfile_Click" >Profile</asp:LinkButton>
+                  </li>
+                  <li class="nav-item">
+                   
+                      <asp:LinkButton ID="linkRequest" CssClass="nav-link text-dark" runat="server" OnClick="linkRequest_Click" >Request</asp:LinkButton>
+                  </li>
+
+
+                  <li class="nav-item">
+                      <asp:LinkButton ID="linkSettings" CssClass="nav-link text-dark" runat="server" OnClick="linkSettings_Click1">Settings</asp:LinkButton>
+                  </li>
+                  <li class="nav-item">
+                    <asp:LinkButton ID="LinkButton1" CssClass="nav-link text-dark" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                  </li>
+                </ul>
+                </div>
+                  <!--
+                  <asp:TextBox ID="searchBar" CssClass="form-control mr-sm-1" placeholder="Search" runat="server"></asp:TextBox>
+
+                   <asp:Button ID="searchbtn" runat="server" Text="search" class="btn btn-dark my-2 my-sm-0"></asp:Button>
+                  -->  
+              </div>
+            </nav>
+
+             
+
+           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+
+         <footer class="bg-light navbar-dark text-center">
+                <div class="container"><br />
+                  <p>&copy; Nomadian.io 2020. All Rights Reserved.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#">Privacy</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Terms</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">FAQ</a>
+                    </li>
+                  </ul><br />
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
